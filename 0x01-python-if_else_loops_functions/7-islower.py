@@ -4,6 +4,6 @@
 def islower(c):
 
     if c >= 'a' and c <= 'z':
-        print(True)
+        return(True)
     else:
-        print(False)
+        return(False)
