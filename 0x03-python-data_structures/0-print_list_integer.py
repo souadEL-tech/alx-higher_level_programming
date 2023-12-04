@@ -2,6 +2,5 @@
 
 def print_list_integer(my_list=[]):
 
-    for i in my_list:
-        print("{:d}".fomrat(i))
-
+    for i in range(len(my_list)):
+        print("{:d}".fomrat(my_list[i]))
