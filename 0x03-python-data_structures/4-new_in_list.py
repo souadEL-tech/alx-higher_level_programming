@@ -2,11 +2,14 @@
 
 def new_in_list(my_list, idx, element):
 
+    new_list = []
+
     if idx < 0:
         return (my_list)
 
     for i in range(len(my_list)):
         if i == idx:
-            my_list.insert(i, element)
-            return (my_list)
-    return (my_list)
+            new_list[i] = element
+        else:
+            new_list[i] = my_list[i]
+    return (new_list)
