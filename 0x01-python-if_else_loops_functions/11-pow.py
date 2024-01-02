@@ -5,4 +5,4 @@ def pow(a, b):
     while (b > 0):
         c *= a
         b -= 1
-    return c
+    return (c)
