@@ -12,5 +12,5 @@ def square_matrix_simple(matrix=[]):
             new_row = square_number(row)
             new_list.append(new_row)
         new_matrix.append(new_list)
-        new_list= list()
+        new_list = list()
     return (new_matrix)
