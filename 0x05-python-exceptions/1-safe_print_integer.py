@@ -2,10 +2,10 @@
 
 def safe_print_integer(value):
     # check if val is an integer
-
     try:
-        if valeu == int(valeu):
-            print("{:d}".format(valeu))
-            return (True)
+        if value == int(value):
+            print("{:d}".format(value))
     except Exception:
         return (False)
+    else:
+        return (True)
