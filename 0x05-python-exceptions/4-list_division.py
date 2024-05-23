@@ -5,9 +5,8 @@ def list_division(my_list_1, my_list_2, list_length):
     new_list = list()
     j = 0
     result = 0
-    lenmax = max(len(my_list_1), len(my_list_2))
 
-    for i in range(lenmax):
+    for i in range(list_length):
         j = i
         try:
             result = (my_list_1[i] / my_list_2[j])
