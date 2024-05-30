@@ -13,9 +13,7 @@ class Square:
         args:
         size : int private with optional val
         """
-        try:
-            self.__size = size
-        except TypeError as e:
-            print("size must be an integer")
-        if size < 0:
+        if size != int(size):
+            raise TypeError("size must be an integer")
+        elif size < 0:
             raise ValueError("size must be >= 0")
