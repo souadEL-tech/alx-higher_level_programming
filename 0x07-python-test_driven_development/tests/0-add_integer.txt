@@ -1,0 +1,27 @@
+
+---------------------------
+---------------------------
+how to use 0-add-integer.py
+----------------------------
+----------------------------
+
+Usage:
+-----
+
+this function return the addition of 2 integres (takes 2 integers as argement with option to the second parammeter(b =98))
+
+>>> add_integer(2, 3)
+5
+
+
+>>> add_integer(2, -3)
+-1
+
+>>> add_integer(2.0, 3.0)
+5
+
+>>> add_integer(2, "hello")
+TypeError: b must be an integer
+
+>>>add_integer("a", 5)
+TypeError: a must be an integer
