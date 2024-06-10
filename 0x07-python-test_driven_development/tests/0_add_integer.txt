@@ -23,5 +23,5 @@ this function return the addition of 2 integres (takes 2 integers as argement wi
 >>> add_integer(2, "hello")
 TypeError: b must be an integer
 
->>>add_integer("a", 5)
+>>> add_integer("a", 5)
 TypeError: a must be an integer
