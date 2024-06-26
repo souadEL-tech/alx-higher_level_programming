@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 
 def matrix_divided(matrix, div):
 
@@ -14,38 +14,39 @@ def matrix_divided(matrix, div):
     Return
     ------
     return new matrix
+
     """
-    # message of TypeError
-    message = "matrix must be a matrix (list of lists)of integers/floats"
     new_matrix = list()
 
-
-    # check matrix item:
-    for i in matrix:
-        for j in i:
-            if not isinstance(j, (int, float)):
-                raise TypeError(message)
-
-    # chech the size of lists
-    length = len(matrix[0])
-    for leng in matrix:
-        if len(leng) != length:
-            raise TypeError("Each row of the matrix must have the same size")
-
-    # check div type
+    # check: div
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
     elif div == 0:
         raise ZeroDivisionError("division by zero")
 
-    # division
+    # check : length of matrix
+    m_len = len(matrix[0])
+    for i in matrix:
+        if len(i) == m_len:
+            pass
+        else:
+            raise TypeError("Each row of the matrix must have the same size")
+    # check : all element are integres or floats
+    for i in matrix:
+        for j in i:
+            if not isinstance(j, (int, float)):
+                raise TypeError("matrix must be a matrix (list of lists) of integers/float")
+            else:
+                pass
+    
 
-    for line in range(len(matrix)):
+    # divide all element
+    for ligne in matrix:
         new_list = list()
-        for col in range(len(matrix[line])):
-            result = round((matrix[line][col] / div), 2)
+        for column in ligne:
+            result = round((column / div), 2)
             new_list.append(result)
         new_matrix.append(new_list)
 
-    #return
+    # RETURN
     return (new_matrix)
