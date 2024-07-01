@@ -1,0 +1,42 @@
+
+doctest for 4-print_square.txt
+------------------------------
+
+::
+print_square(size): is a function that prints a square with the character #.
+
+::
+**import the  function **
+
+>>> print_square = __import__('4-print_square').print_square
+
+case 1: size = 4
+--------------------
+>>> print_square(4)
+####
+####
+####
+####
+
+case 2: size = 1
+-------------------
+>>> print_square(1)
+#
+
+case 3: size = 0
+-------------------
+>>> print_square(0)
+
+case 4: size =-1
+----------------------
+>>> print_square(-1)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+
+
+
+
+
+
