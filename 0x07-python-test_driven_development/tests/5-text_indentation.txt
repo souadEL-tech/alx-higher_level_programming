@@ -1,0 +1,35 @@
+doctest for 5-text_indentation.txt
+-------------------------------------
+
+:: Function :That prints a text with 2 new lines after each of these characters: ., ? and :
+
+:: START TEST::
+
+:: iMPORT THE FUNCTION FILE:
+----------------------------
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere?Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud:Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum/ this caracter not includ""")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Quonam modo?
+Utrum igitur tibi litteram videor an totas paginas commovere?
+on autem hoc:
+igitur ne illud quidem.
+Fortasse id optimum, sed ubi illud:
+lus semper voluptatis?
+Teneo, inquit, finem illi videri nihil dolere.
+Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum/ this caracter not includ
+
+
+ERROR CASE: if text not a stirng
+------------------------------------
+>>> text_indentation(4)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+
+
+
+
+
+
