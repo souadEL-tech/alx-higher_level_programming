@@ -92,7 +92,6 @@ class Rectangle:
         else:
             result = []
             for i in range(self.__height):
-                # List comprehension
                 [result.append('#')for j in range(self.__width)]
                 if i != self.__height - 1:
                     result.append("\n")
