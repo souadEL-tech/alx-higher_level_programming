@@ -96,3 +96,12 @@ class Rectangle:
                 if i != self.__height - 1:
                     result.append("\n")
             return ("".join(result))
+
+    # about repr
+
+    def __repr__(self):
+        """ repr for Rectangle """
+
+        width_expr = 'self.__width'
+        height_expr = 'self.__height'
+        return f"Rectangle({self.__width}, {self.__height})"
