@@ -111,4 +111,4 @@ class Rectangle:
     def __del__(self):
         del self.__width
         del self.__height
-        print("Bye rectangle")
+        print("Bye rectangle...")
